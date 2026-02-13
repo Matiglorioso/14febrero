@@ -14,10 +14,13 @@ Página web sencilla para dedicar a tu pareja, con video de YouTube integrado.
    src="https://www.youtube.com/embed/TU_VIDEO_ID_AQUI?rel=0"
    ```
 
-3. **Personalizar textos** (opcional)  
-   - **Hero:** el título "Para ti" y el subtítulo "San Valentín y nuestro aniversario".  
-   - **Sección del video:** el título "Tu canción" y la frase "Esto es para ti. Te quiero."  
-   - **Cierre:** el mensaje en cursiva y la firma "Con amor, para siempre".
+3. **Fotos del collage** (opcional)  
+   - En la carpeta `img/` poné fotos nombradas: **1.jpg**, **2.jpg**, **3.jpg**, **4.jpg**, **5.jpg**, **6.jpg**.  
+   - Aparecerán detrás del título y el subtítulo del hero. Si usás menos, las que falten se verán como recuadros suaves.
+
+4. **Personalizar textos** (opcional)  
+   - **Hero:** título y subtítulo.  
+   - **Cierre:** mensaje en cursiva y firma.
 
 ## Subir a internet (opcional)
 
