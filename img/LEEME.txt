@@ -1,5 +1,2 @@
-Colocá aquí las fotos para el collage del hero.
-Nombres que usa la página: 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg
-
-Podés usar menos (las que falten se verán como un recuadro color rosa suave)
-o editar index.html para cambiar nombres/cantidad.
+Fotos del collage del hero.
+La página usa: foto1.jpeg, foto2.jpeg, foto3.jpeg, foto4.jpeg, foto5.jpeg, foto6.jpeg
