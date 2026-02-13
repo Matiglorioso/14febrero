@@ -1,2 +1,2 @@
 Fotos del collage del hero.
-La página usa: foto1.jpeg a foto9.jpeg (9 fotos en el collage)
+La página usa: foto1.jpeg a foto6.jpeg + foto7, foto9, foto10 (9 fotos en el collage)
