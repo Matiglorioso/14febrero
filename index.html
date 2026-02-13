@@ -64,16 +64,20 @@
       background-color: var(--color-pink);
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       border-radius: 12px;
       box-shadow: 0 8px 32px rgba(74, 63, 61, 0.15);
+      image-rendering: -webkit-optimize-contrast;
+      backface-visibility: hidden;
+      filter: contrast(1.07) saturate(1.1);
     }
 
-    .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 8%;   width: 22%; height: 28%; transform: rotate(-4deg); }
-    .hero-collage .collage-photo:nth-child(2) { right: 5%;  top: 12%;  width: 20%; height: 24%; transform: rotate(3deg);  }
-    .hero-collage .collage-photo:nth-child(3) { left: 8%;   bottom: 15%; width: 24%; height: 30%; transform: rotate(2deg);  }
-    .hero-collage .collage-photo:nth-child(4) { right: 3%;  bottom: 20%; width: 26%; height: 26%; transform: rotate(-3deg); }
-    .hero-collage .collage-photo:nth-child(5) { left: 50%;  top: 5%;   width: 18%; height: 22%; transform: translateX(-50%) rotate(1deg); }
-    .hero-collage .collage-photo:nth-child(6) { left: 50%;  bottom: 8%; width: 20%; height: 24%; transform: translateX(-50%) rotate(-2deg); }
+    .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 8%;   width: 22%; height: 28%; transform: rotate(-4deg) translateZ(0); }
+    .hero-collage .collage-photo:nth-child(2) { right: 5%;  top: 12%;  width: 20%; height: 24%; transform: rotate(3deg) translateZ(0);  }
+    .hero-collage .collage-photo:nth-child(3) { left: 8%;   bottom: 15%; width: 24%; height: 30%; transform: rotate(2deg) translateZ(0);  }
+    .hero-collage .collage-photo:nth-child(4) { right: 3%;  bottom: 20%; width: 26%; height: 26%; transform: rotate(-3deg) translateZ(0); }
+    .hero-collage .collage-photo:nth-child(5) { left: 50%;  top: 5%;   width: 18%; height: 22%; transform: translateX(-50%) rotate(1deg) translateZ(0); }
+    .hero-collage .collage-photo:nth-child(6) { left: 50%;  bottom: 8%; width: 20%; height: 24%; transform: translateX(-50%) rotate(-2deg) translateZ(0); }
 
     @media (max-width: 768px) {
       .hero-collage .collage-photo:nth-child(1) { left: 0;   top: 5%;   width: 28%; height: 22%; }
