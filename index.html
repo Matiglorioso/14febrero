@@ -61,12 +61,17 @@
 
     .hero-collage .collage-photo {
       position: absolute;
-      background-color: var(--color-pink);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      overflow: hidden;
       border-radius: 12px;
       box-shadow: 0 8px 32px rgba(74, 63, 61, 0.15);
+    }
+
+    .hero-collage .collage-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px;
     }
 
     .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 8%;   width: 22%; height: 28%; transform: rotate(-4deg); }
@@ -248,12 +253,12 @@
 <body>
   <section class="hero">
     <div class="hero-collage" aria-hidden="true">
-      <div class="collage-photo" style="background-image: url('img/foto1.jpeg');"></div>
-      <div class="collage-photo" style="background-image: url('img/foto2.jpeg');"></div>
-      <div class="collage-photo" style="background-image: url('img/foto3.jpeg');"></div>
-      <div class="collage-photo" style="background-image: url('img/foto4.jpeg');"></div>
-      <div class="collage-photo" style="background-image: url('img/foto5.jpeg');"></div>
-      <div class="collage-photo" style="background-image: url('img/foto6.jpeg');"></div>
+      <div class="collage-photo"><img src="img/foto1.jpeg" alt=""></div>
+      <div class="collage-photo"><img src="img/foto2.jpeg" alt=""></div>
+      <div class="collage-photo"><img src="img/foto3.jpeg" alt=""></div>
+      <div class="collage-photo"><img src="img/foto4.jpeg" alt=""></div>
+      <div class="collage-photo"><img src="img/foto5.jpeg" alt=""></div>
+      <div class="collage-photo"><img src="img/foto6.jpeg" alt=""></div>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
