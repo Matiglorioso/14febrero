@@ -270,7 +270,7 @@ body {
 
 /* Closing */
 .closing {
-  padding: 1.5rem 1.5rem 4rem;
+  padding: 1.5rem 1.5rem 1.5rem;
   text-align: center;
   background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-cream) 100%);
 }
