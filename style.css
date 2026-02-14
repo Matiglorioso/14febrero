@@ -228,8 +228,8 @@ body {
 
 /* Video section */
 .video-section {
-  padding: 18rem 1.5rem 4rem;
-  max-width: 900px;
+  padding: 18rem 1.5rem 1.5rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -270,7 +270,7 @@ body {
 
 /* Closing */
 .closing {
-  padding: 4rem 1.5rem;
+  padding: 1.5rem 1.5rem 4rem;
   text-align: center;
   background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-cream) 100%);
 }
