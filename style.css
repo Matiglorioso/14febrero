@@ -118,9 +118,7 @@ body {
   .hero-collage .collage-photo:nth-child(5) { left: 26%;  top: 2%;   transform: translateX(-50%) rotate(1deg); }
   .hero-collage .collage-photo:nth-child(5):hover { transform: translateX(-50%) rotate(1deg) scale(1.02); }
   .hero-collage .collage-photo:nth-child(5) img { max-width: 22vw; max-height: 24vh; }
-  .hero-collage .collage-photo:nth-child(6) { left: 50%;  bottom: 14%; transform: translateX(-50%) rotate(-2deg); }
-  .hero-collage .collage-photo:nth-child(6):hover { transform: translateX(-50%) rotate(-2deg) scale(1.02); }
-  .hero-collage .collage-photo:nth-child(6) img { max-width: 20vw; max-height: 22vh; }
+  .hero-collage .collage-photo:nth-child(6) { display: none; }
   .hero-collage .collage-photo:nth-child(7) { left: 74%;  top: 2%;   transform: translateX(-50%) rotate(-1deg); }
   .hero-collage .collage-photo:nth-child(7):hover { transform: translateX(-50%) rotate(-1deg) scale(1.02); }
   .hero-collage .collage-photo:nth-child(7) img { max-width: 20vw; max-height: 24vh; }
