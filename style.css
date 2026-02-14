@@ -105,6 +105,27 @@ body {
 .hero-collage .collage-photo:nth-child(7):hover { transform: translateX(-50%) rotate(-1deg) scale(1.02); }
 .hero-collage .collage-photo:nth-child(7) img { max-width: 24vw; max-height: 28vh; }
 
+/* Notebook: evitar superposiciones con título, subtítulo y Bajá */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 4%; }
+  .hero-collage .collage-photo:nth-child(1) img { max-width: 22vw; max-height: 28vh; }
+  .hero-collage .collage-photo:nth-child(2) { right: 2%;  top: 4%; }
+  .hero-collage .collage-photo:nth-child(2) img { max-width: 22vw; max-height: 26vh; }
+  .hero-collage .collage-photo:nth-child(3) { left: 2%;   bottom: 14%; }
+  .hero-collage .collage-photo:nth-child(3) img { max-width: 24vw; max-height: 30vh; }
+  .hero-collage .collage-photo:nth-child(4) { right: 2%;  bottom: 14%; }
+  .hero-collage .collage-photo:nth-child(4) img { max-width: 26vw; max-height: 28vh; }
+  .hero-collage .collage-photo:nth-child(5) { left: 26%;  top: 2%;   transform: translateX(-50%) rotate(1deg); }
+  .hero-collage .collage-photo:nth-child(5):hover { transform: translateX(-50%) rotate(1deg) scale(1.02); }
+  .hero-collage .collage-photo:nth-child(5) img { max-width: 22vw; max-height: 24vh; }
+  .hero-collage .collage-photo:nth-child(6) { left: 50%;  bottom: 14%; transform: translateX(-50%) rotate(-2deg); }
+  .hero-collage .collage-photo:nth-child(6):hover { transform: translateX(-50%) rotate(-2deg) scale(1.02); }
+  .hero-collage .collage-photo:nth-child(6) img { max-width: 20vw; max-height: 22vh; }
+  .hero-collage .collage-photo:nth-child(7) { left: 74%;  top: 2%;   transform: translateX(-50%) rotate(-1deg); }
+  .hero-collage .collage-photo:nth-child(7):hover { transform: translateX(-50%) rotate(-1deg) scale(1.02); }
+  .hero-collage .collage-photo:nth-child(7) img { max-width: 20vw; max-height: 24vh; }
+}
+
 @media (max-width: 768px) {
   .hero-collage .collage-photo:nth-child(1) { left: 5%;   top: 5%;  transform: rotate(-4deg); }
   .hero-collage .collage-photo:nth-child(1):hover { transform: rotate(-4deg) scale(1.02); }
