@@ -49,7 +49,7 @@
   </section>
 
   <section class="flowers" aria-hidden="true">
-    <svg class="flowers-svg" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="flowers-svg" viewBox="0 0 1600 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="petal-pink" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#e8b4b8"/>
@@ -63,8 +63,16 @@
           <stop offset="0%" stop-color="#d4af37"/>
           <stop offset="100%" stop-color="#b8962e"/>
         </linearGradient>
-        <!-- Flor simple 5 pétalos -->
-        <g id="flower">
+        <linearGradient id="stem-green" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#8a9d7a"/>
+          <stop offset="100%" stop-color="#9bad8e"/>
+        </linearGradient>
+        <linearGradient id="leaf-green" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#9bad8e"/>
+          <stop offset="100%" stop-color="#7d9370"/>
+        </linearGradient>
+        <!-- Cabeza de flor rosa -->
+        <g id="flower-head">
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(0)"/>
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(72)"/>
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(144)"/>
@@ -72,8 +80,7 @@
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(288)"/>
           <circle r="8" fill="url(#center-gold)"/>
         </g>
-        <!-- Flor rosa más oscura -->
-        <g id="flower-rose">
+        <g id="flower-head-rose">
           <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(36)"/>
           <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(108)"/>
           <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(180)"/>
@@ -81,25 +88,50 @@
           <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(324)"/>
           <circle r="6" fill="url(#center-gold)"/>
         </g>
+        <!-- Flor completa con tallo y hojas (origen en base del tallo) -->
+        <g id="flower-plant-a">
+          <path d="M 0 200 Q 8 120 0 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="5" cy="140" rx="18" ry="8" fill="url(#leaf-green)" transform="rotate(-25 5 140)"/>
+          <ellipse cx="-4" cy="70" rx="16" ry="7" fill="url(#leaf-green)" transform="rotate(20 -4 70)"/>
+          <g transform="translate(0 0)"><use href="#flower-head"/></g>
+        </g>
+        <g id="flower-plant-b">
+          <path d="M 0 200 Q -6 100 2 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="-6" cy="130" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(30 -6 130)"/>
+          <ellipse cx="4" cy="50" rx="12" ry="5" fill="url(#leaf-green)" transform="rotate(-15 4 50)"/>
+          <g transform="translate(2 0)"><use href="#flower-head-rose"/></g>
+        </g>
+        <g id="flower-plant-c">
+          <path d="M 0 180 Q 5 90 -2 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="6" cy="100" rx="20" ry="9" fill="url(#leaf-green)" transform="rotate(-20 6 100)"/>
+          <g transform="translate(-2 0)"><use href="#flower-head"/></g>
+        </g>
       </defs>
-      <!-- Fila superior -->
-      <use href="#flower" x="80" y="60" opacity="0.9"/>
-      <use href="#flower-rose" x="220" y="50" opacity="0.85"/>
-      <use href="#flower" x="360" y="70" opacity="0.95"/>
-      <use href="#flower-rose" x="500" y="55" opacity="0.9"/>
-      <use href="#flower" x="640" y="65" opacity="0.88"/>
-      <use href="#flower-rose" x="780" y="58" opacity="0.92"/>
-      <use href="#flower" x="920" y="62" opacity="0.9"/>
-      <use href="#flower-rose" x="1060" y="68" opacity="0.85"/>
-      <!-- Fila inferior -->
-      <use href="#flower-rose" x="150" y="140" opacity="0.85"/>
-      <use href="#flower" x="290" y="130" opacity="0.9"/>
-      <use href="#flower-rose" x="430" y="145" opacity="0.88"/>
-      <use href="#flower" x="570" y="135" opacity="0.92"/>
-      <use href="#flower-rose" x="710" y="142" opacity="0.9"/>
-      <use href="#flower" x="850" y="138" opacity="0.85"/>
-      <use href="#flower-rose" x="990" y="132" opacity="0.9"/>
-      <use href="#flower" x="1130" y="148" opacity="0.88"/>
+      <!-- Pared de flores: varias plantas a lo ancho, dos filas superpuestas -->
+      <use href="#flower-plant-a" x="40" y="20" opacity="0.92"/>
+      <use href="#flower-plant-b" x="180" y="60" opacity="0.88"/>
+      <use href="#flower-plant-c" x="320" y="10" opacity="0.95"/>
+      <use href="#flower-plant-a" x="460" y="50" opacity="0.9"/>
+      <use href="#flower-plant-b" x="600" y="25" opacity="0.93"/>
+      <use href="#flower-plant-c" x="740" y="55" opacity="0.87"/>
+      <use href="#flower-plant-a" x="880" y="15" opacity="0.91"/>
+      <use href="#flower-plant-b" x="1020" y="45" opacity="0.89"/>
+      <use href="#flower-plant-c" x="1160" y="30" opacity="0.94"/>
+      <use href="#flower-plant-a" x="1300" y="60" opacity="0.9"/>
+      <use href="#flower-plant-b" x="1440" y="20" opacity="0.92"/>
+      <use href="#flower-plant-c" x="1580" y="40" opacity="0.88"/>
+      <!-- Segunda fila (más abajo, escalonada) -->
+      <use href="#flower-plant-b" x="110" y="200" opacity="0.85"/>
+      <use href="#flower-plant-c" x="250" y="240" opacity="0.9"/>
+      <use href="#flower-plant-a" x="390" y="210" opacity="0.88"/>
+      <use href="#flower-plant-b" x="530" y="250" opacity="0.86"/>
+      <use href="#flower-plant-c" x="670" y="220" opacity="0.91"/>
+      <use href="#flower-plant-a" x="810" y="255" opacity="0.87"/>
+      <use href="#flower-plant-b" x="950" y="215" opacity="0.89"/>
+      <use href="#flower-plant-c" x="1090" y="245" opacity="0.86"/>
+      <use href="#flower-plant-a" x="1230" y="230" opacity="0.9"/>
+      <use href="#flower-plant-b" x="1370" y="260" opacity="0.88"/>
+      <use href="#flower-plant-c" x="1510" y="205" opacity="0.87"/>
     </svg>
   </section>
 </body>
