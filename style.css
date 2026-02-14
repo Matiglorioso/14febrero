@@ -89,7 +89,7 @@ body {
 .hero-collage .collage-photo:nth-child(3):hover { transform: rotate(2deg) scale(1.02); }
 .hero-collage .collage-photo:nth-child(3) img { max-width: 30vw; max-height: 36vh; }
 
-.hero-collage .collage-photo:nth-child(4) { right: 3%;  bottom: 20%; transform: rotate(-3deg); }
+.hero-collage .collage-photo:nth-child(4) { right: 8%;  bottom: 12%; transform: rotate(-3deg); }
 .hero-collage .collage-photo:nth-child(4):hover { transform: rotate(-3deg) scale(1.02); }
 .hero-collage .collage-photo:nth-child(4) img { max-width: 32vw; max-height: 32vh; }
 
@@ -115,7 +115,7 @@ body {
   .hero-collage .collage-photo:nth-child(3) { left: 0;   bottom: 10%; transform: rotate(2deg); }
   .hero-collage .collage-photo:nth-child(3):hover { transform: rotate(2deg) scale(1.02); }
   .hero-collage .collage-photo:nth-child(3) img { max-width: 36vw; max-height: 30vh; }
-  .hero-collage .collage-photo:nth-child(4) { right: 0;  bottom: 12%; transform: rotate(-3deg); }
+  .hero-collage .collage-photo:nth-child(4) { right: 5%;  bottom: 8%;  transform: rotate(-3deg); }
   .hero-collage .collage-photo:nth-child(4):hover { transform: rotate(-3deg) scale(1.02); }
   .hero-collage .collage-photo:nth-child(4) img { max-width: 34vw; max-height: 28vh; }
   .hero-collage .collage-photo:nth-child(5) { left: 52%; top: 35%; transform: translateX(-50%) rotate(1deg); }
