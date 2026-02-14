@@ -49,43 +49,27 @@
   </section>
 
   <section class="flowers" aria-hidden="true">
-    <!-- Flores animadas desde GIPHY (stickers). Sin API key se usan IDs de respaldo. -->
+    <!-- Margaritas: imágenes dominio público (Wikimedia Commons), sin API ni clave. Se repiten para cubrir todo el ancho. -->
     <div class="flowers-row" id="flowers-row"></div>
   </section>
 
   <script>
     (function() {
-      // Poné tu API key de GIPHY (gratis en https://developers.giphy.com/dashboard/) o dejá '' para usar flores de respaldo
-      var GIPHY_API_KEY = '';
-      var FALLBACK_IDS = ['m6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD', 'm6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD', 'm6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD', 'm6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD', 'm6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD', 'm6Agy6IoDgIrwIOpaZ', 'HySiMvayNMW2ARlxZD'];
+      // URLs directas de margaritas en Wikimedia Commons (dominio público, uso libre)
+      var MARGARITAS = [
+        'https://upload.wikimedia.org/wikipedia/commons/d/d9/Daisy_flower_%281%29.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/9/93/Daisy_flower.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/1/14/Flowers_daisies_daisy.jpg'
+      ];
       var row = document.getElementById('flowers-row');
-
-      function renderStickers(list) {
-        row.innerHTML = '';
-        list.forEach(function(item) {
-          var id = typeof item === 'string' ? item : item.id;
-          var url = typeof item === 'string' ? 'https://i.giphy.com/media/' + id + '/giphy.gif' : (item.images && item.images.fixed_height ? item.images.fixed_height.url : 'https://i.giphy.com/media/' + id + '/giphy.gif');
-          var img = document.createElement('img');
-          img.src = url;
-          img.alt = 'Flor animada';
-          img.className = 'flower-gif';
-          row.appendChild(img);
-        });
-      }
-
-      if (GIPHY_API_KEY) {
-        fetch('https://api.giphy.com/v1/stickers/search?api_key=' + encodeURIComponent(GIPHY_API_KEY) + '&q=flower&limit=12&rating=g')
-          .then(function(r) { return r.json(); })
-          .then(function(res) {
-            if (res.data && res.data.length) {
-              renderStickers(res.data);
-            } else {
-              renderStickers(FALLBACK_IDS);
-            }
-          })
-          .catch(function() { renderStickers(FALLBACK_IDS); });
-      } else {
-        renderStickers(FALLBACK_IDS);
+      // Cantidad necesaria para cubrir el fondo en pantallas anchas (se reparten con flex)
+      var total = 48;
+      for (var i = 0; i < total; i++) {
+        var img = document.createElement('img');
+        img.src = MARGARITAS[i % MARGARITAS.length];
+        img.alt = 'Margarita';
+        img.className = 'flower-img';
+        row.appendChild(img);
       }
     })();
   </script>

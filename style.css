@@ -293,29 +293,29 @@ body {
   font-weight: 600;
 }
 
-/* Flores animadas (GIPHY stickers) */
+/* Margaritas: cubren todo el ancho (imágenes libres, sin API) */
 .flowers {
   width: 100%;
   background: var(--color-cream);
-  padding: 0.5rem 0;
+  padding: 0;
   overflow: hidden;
 }
 
 .flowers-row {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
+  align-items: stretch;
   gap: 0;
   width: 100%;
-  min-height: 120px;
+  min-height: 140px;
 }
 
-.flower-gif {
+.flower-img {
   display: block;
   flex: 1 1 0;
   min-width: 0;
-  height: 100px;
-  object-fit: contain;
+  height: 140px;
+  object-fit: cover;
   object-position: center;
 }
