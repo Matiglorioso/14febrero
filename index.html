@@ -47,5 +47,60 @@
     <p class="message">Gracias por tus ternuras que no son para este mundo.</p>
     <p class="sign">Con amor, para lo que dure la memoria, te ama: Mati.</p>
   </section>
+
+  <section class="flowers" aria-hidden="true">
+    <svg class="flowers-svg" viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="petal-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#e8b4b8"/>
+          <stop offset="100%" stop-color="#d4a5a9"/>
+        </linearGradient>
+        <linearGradient id="petal-rose" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#c9a0a0"/>
+          <stop offset="100%" stop-color="#b89090"/>
+        </linearGradient>
+        <linearGradient id="center-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#d4af37"/>
+          <stop offset="100%" stop-color="#b8962e"/>
+        </linearGradient>
+        <!-- Flor simple 5 pétalos -->
+        <g id="flower">
+          <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(72)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(144)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(216)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(288)"/>
+          <circle r="8" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor rosa más oscura -->
+        <g id="flower-rose">
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(36)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(108)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(252)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(324)"/>
+          <circle r="6" fill="url(#center-gold)"/>
+        </g>
+      </defs>
+      <!-- Fila superior -->
+      <use href="#flower" x="80" y="60" opacity="0.9"/>
+      <use href="#flower-rose" x="220" y="50" opacity="0.85"/>
+      <use href="#flower" x="360" y="70" opacity="0.95"/>
+      <use href="#flower-rose" x="500" y="55" opacity="0.9"/>
+      <use href="#flower" x="640" y="65" opacity="0.88"/>
+      <use href="#flower-rose" x="780" y="58" opacity="0.92"/>
+      <use href="#flower" x="920" y="62" opacity="0.9"/>
+      <use href="#flower-rose" x="1060" y="68" opacity="0.85"/>
+      <!-- Fila inferior -->
+      <use href="#flower-rose" x="150" y="140" opacity="0.85"/>
+      <use href="#flower" x="290" y="130" opacity="0.9"/>
+      <use href="#flower-rose" x="430" y="145" opacity="0.88"/>
+      <use href="#flower" x="570" y="135" opacity="0.92"/>
+      <use href="#flower-rose" x="710" y="142" opacity="0.9"/>
+      <use href="#flower" x="850" y="138" opacity="0.85"/>
+      <use href="#flower-rose" x="990" y="132" opacity="0.9"/>
+      <use href="#flower" x="1130" y="148" opacity="0.88"/>
+    </svg>
+  </section>
 </body>
 </html>
