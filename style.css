@@ -105,8 +105,8 @@ body {
 .hero-collage .collage-photo:nth-child(7):hover { transform: translateX(-50%) rotate(-1deg) scale(1.02); }
 .hero-collage .collage-photo:nth-child(7) img { max-width: 24vw; max-height: 28vh; }
 
-/* Notebook: evitar superposiciones con título, subtítulo y Bajá */
-@media (min-width: 769px) and (max-width: 1200px) {
+/* Notebook: evitar superposiciones; foto6 oculta */
+@media (min-width: 769px) and (max-width: 1400px) {
   .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 4%; }
   .hero-collage .collage-photo:nth-child(1) img { max-width: 22vw; max-height: 28vh; }
   .hero-collage .collage-photo:nth-child(2) { right: 2%;  top: 4%; }
