@@ -86,12 +86,12 @@
       vertical-align: bottom;
     }
 
-    /* Marco alrededor del título: arriba, costados y abajo, sin pisar el centro */
-    .hero-collage .collage-photo:nth-child(1) { left: 4%;   top: 6%;   transform: rotate(-5deg); }
+    /* Cubrir toda la zona: arriba centro, abajo izq/der; centro (título/subtítulo/Bajá) libre y sin solapamientos */
+    .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 2%;   transform: rotate(-5deg); }
     .hero-collage .collage-photo:nth-child(1):hover { transform: rotate(-5deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(1) img { max-width: 24vw; max-height: 28vh; }
 
-    .hero-collage .collage-photo:nth-child(2) { right: 4%;  top: 8%;   transform: rotate(4deg); }
+    .hero-collage .collage-photo:nth-child(2) { right: 2%;  top: 2%;   transform: rotate(4deg); }
     .hero-collage .collage-photo:nth-child(2):hover { transform: rotate(4deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(2) img { max-width: 22vw; max-height: 26vh; }
 
@@ -103,19 +103,19 @@
     .hero-collage .collage-photo:nth-child(4):hover { transform: translateY(-50%) rotate(2deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(4) img { max-width: 20vw; max-height: 24vh; }
 
-    .hero-collage .collage-photo:nth-child(5) { left: 6%;   bottom: 28%; transform: rotate(3deg); }
+    .hero-collage .collage-photo:nth-child(5) { left: 2%;   bottom: 10%; transform: rotate(3deg); }
     .hero-collage .collage-photo:nth-child(5):hover { transform: rotate(3deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(5) img { max-width: 22vw; max-height: 26vh; }
 
-    .hero-collage .collage-photo:nth-child(6) { right: 6%;  bottom: 26%; transform: rotate(-3deg); }
+    .hero-collage .collage-photo:nth-child(6) { right: 2%;  bottom: 10%; transform: rotate(-3deg); }
     .hero-collage .collage-photo:nth-child(6):hover { transform: rotate(-3deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(6) img { max-width: 22vw; max-height: 26vh; }
 
-    .hero-collage .collage-photo:nth-child(7) { left: 10%;  top: 22%;  transform: rotate(2deg); }
+    .hero-collage .collage-photo:nth-child(7) { left: 30%;  top: 2%;   transform: rotate(2deg); }
     .hero-collage .collage-photo:nth-child(7):hover { transform: rotate(2deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(7) img { max-width: 18vw; max-height: 20vh; }
 
-    .hero-collage .collage-photo:nth-child(8) { right: 10%; top: 24%;  transform: rotate(-2deg); }
+    .hero-collage .collage-photo:nth-child(8) { left: 52%;  top: 2%;   transform: rotate(-2deg); }
     .hero-collage .collage-photo:nth-child(8):hover { transform: rotate(-2deg) scale(1.02); }
     .hero-collage .collage-photo:nth-child(8) img { max-width: 18vw; max-height: 20vh; }
 
@@ -124,10 +124,10 @@
     .hero-collage .collage-photo:nth-child(9) img { max-width: 16vw; max-height: 18vh; }
 
     @media (max-width: 768px) {
-      .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 4%;  transform: rotate(-4deg); }
+      .hero-collage .collage-photo:nth-child(1) { left: 2%;   top: 2%;  transform: rotate(-4deg); }
       .hero-collage .collage-photo:nth-child(1):hover { transform: rotate(-4deg) scale(1.02); }
       .hero-collage .collage-photo:nth-child(1) img { max-width: 28vw; max-height: 22vh; }
-      .hero-collage .collage-photo:nth-child(2) { right: 2%;  top: 6%;  transform: rotate(4deg); }
+      .hero-collage .collage-photo:nth-child(2) { right: 2%;  top: 2%;  transform: rotate(4deg); }
       .hero-collage .collage-photo:nth-child(2):hover { transform: rotate(4deg) scale(1.02); }
       .hero-collage .collage-photo:nth-child(2) img { max-width: 26vw; max-height: 20vh; }
       .hero-collage .collage-photo:nth-child(3) { left: 0;   top: 38%; transform: translateY(-50%) rotate(-2deg); }
@@ -136,11 +136,12 @@
       .hero-collage .collage-photo:nth-child(4) { right: 0;  top: 42%; transform: translateY(-50%) rotate(2deg); }
       .hero-collage .collage-photo:nth-child(4):hover { transform: translateY(-50%) rotate(2deg) scale(1.02); }
       .hero-collage .collage-photo:nth-child(4) img { max-width: 24vw; max-height: 20vh; }
-      .hero-collage .collage-photo:nth-child(5) { left: 2%;   bottom: 22%; }
+      .hero-collage .collage-photo:nth-child(5) { left: 2%;   bottom: 10%; }
       .hero-collage .collage-photo:nth-child(5) img { max-width: 26vw; max-height: 22vh; }
-      .hero-collage .collage-photo:nth-child(6) { right: 2%;  bottom: 20%; }
+      .hero-collage .collage-photo:nth-child(6) { right: 2%;  bottom: 10%; }
       .hero-collage .collage-photo:nth-child(6) img { max-width: 26vw; max-height: 22vh; }
-      .hero-collage .collage-photo:nth-child(7) { display: none; }
+      .hero-collage .collage-photo:nth-child(7) { left: 28%; top: 2%; }
+      .hero-collage .collage-photo:nth-child(7) img { max-width: 20vw; max-height: 18vh; }
       .hero-collage .collage-photo:nth-child(8) { display: none; }
       .hero-collage .collage-photo:nth-child(9) { left: 50%; bottom: 14%; transform: translateX(-50%); }
       .hero-collage .collage-photo:nth-child(9):hover { transform: translateX(-50%) scale(1.02); }
