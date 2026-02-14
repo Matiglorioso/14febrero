@@ -108,6 +108,7 @@ body {
 /* Notebook: solo ocultar foto6; el resto igual que escritorio */
 @media (min-width: 769px) and (max-width: 1400px) {
   .hero-collage .collage-photo:nth-child(6) { display: none; }
+  .closing { padding-bottom: 0.25rem; }
 }
 
 @media (max-width: 768px) {
