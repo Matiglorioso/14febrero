@@ -49,7 +49,7 @@
   </section>
 
   <section class="flowers" aria-hidden="true">
-    <svg class="flowers-svg" viewBox="0 0 1600 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="flowers-svg" viewBox="0 0 1600 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="petal-pink" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#e8b4b8"/>
@@ -71,8 +71,8 @@
           <stop offset="0%" stop-color="#9bad8e"/>
           <stop offset="100%" stop-color="#7d9370"/>
         </linearGradient>
-        <!-- Cabeza de flor rosa -->
-        <g id="flower-head">
+        <!-- Flor 1: 5 pétalos clásicos -->
+        <g id="head-5petals">
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(0)"/>
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(72)"/>
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(144)"/>
@@ -80,58 +80,196 @@
           <ellipse cx="0" cy="0" rx="14" ry="22" fill="url(#petal-pink)" transform="rotate(288)"/>
           <circle r="8" fill="url(#center-gold)"/>
         </g>
-        <g id="flower-head-rose">
-          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(36)"/>
-          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(108)"/>
+        <!-- Flor 2: 6 pétalos, rosa -->
+        <g id="head-6petals">
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(60)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(120)"/>
           <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(180)"/>
-          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(252)"/>
-          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(324)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(240)"/>
+          <ellipse cx="0" cy="0" rx="12" ry="18" fill="url(#petal-rose)" transform="rotate(300)"/>
           <circle r="6" fill="url(#center-gold)"/>
         </g>
-        <!-- Flor completa con tallo y hojas (origen en base del tallo) -->
-        <g id="flower-plant-a">
-          <path d="M 0 200 Q 8 120 0 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
-          <ellipse cx="5" cy="140" rx="18" ry="8" fill="url(#leaf-green)" transform="rotate(-25 5 140)"/>
-          <ellipse cx="-4" cy="70" rx="16" ry="7" fill="url(#leaf-green)" transform="rotate(20 -4 70)"/>
-          <g transform="translate(0 0)"><use href="#flower-head"/></g>
+        <!-- Flor 3: 4 pétalos abiertos -->
+        <g id="head-4petals">
+          <ellipse cx="0" cy="0" rx="16" ry="20" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="16" ry="20" fill="url(#petal-pink)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="0" rx="16" ry="20" fill="url(#petal-pink)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="0" rx="16" ry="20" fill="url(#petal-pink)" transform="rotate(270)"/>
+          <circle r="7" fill="url(#center-gold)"/>
         </g>
-        <g id="flower-plant-b">
-          <path d="M 0 200 Q -6 100 2 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
-          <ellipse cx="-6" cy="130" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(30 -6 130)"/>
-          <ellipse cx="4" cy="50" rx="12" ry="5" fill="url(#leaf-green)" transform="rotate(-15 4 50)"/>
-          <g transform="translate(2 0)"><use href="#flower-head-rose"/></g>
+        <!-- Flor 4: 8 pétalos tipo margarita -->
+        <g id="head-8petals">
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="16" fill="url(#petal-rose)" transform="rotate(315)"/>
+          <circle r="5" fill="url(#center-gold)"/>
         </g>
-        <g id="flower-plant-c">
-          <path d="M 0 180 Q 5 90 -2 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
-          <ellipse cx="6" cy="100" rx="20" ry="9" fill="url(#leaf-green)" transform="rotate(-20 6 100)"/>
-          <g transform="translate(-2 0)"><use href="#flower-head"/></g>
+        <!-- Flor 5: 5 pétalos redondos (gorditos) -->
+        <g id="head-5round">
+          <circle cx="0" cy="-18" r="10" fill="url(#petal-pink)"/>
+          <circle cx="17" cy="6" r="10" fill="url(#petal-pink)"/>
+          <circle cx="10" cy="20" r="10" fill="url(#petal-pink)"/>
+          <circle cx="-10" cy="20" r="10" fill="url(#petal-pink)"/>
+          <circle cx="-17" cy="6" r="10" fill="url(#petal-pink)"/>
+          <circle r="7" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 6: 7 pétalos -->
+        <g id="head-7petals">
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(51.4)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(102.8)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(154.2)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(205.6)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(257)"/>
+          <ellipse cx="0" cy="0" rx="11" ry="19" fill="url(#petal-rose)" transform="rotate(308.4)"/>
+          <circle r="6" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 7: 5 pétalos alargados (lirio) -->
+        <g id="head-long">
+          <ellipse cx="0" cy="0" rx="8" ry="24" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="24" fill="url(#petal-pink)" transform="rotate(72)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="24" fill="url(#petal-pink)" transform="rotate(144)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="24" fill="url(#petal-pink)" transform="rotate(216)"/>
+          <ellipse cx="0" cy="0" rx="8" ry="24" fill="url(#petal-pink)" transform="rotate(288)"/>
+          <circle r="5" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 8: 6 pétalos grandes rosa -->
+        <g id="head-6big">
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(30)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(150)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(210)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="0" rx="14" ry="20" fill="url(#petal-rose)" transform="rotate(330)"/>
+          <circle r="8" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 9: 3 pétalos (simple) -->
+        <g id="head-3petals">
+          <ellipse cx="0" cy="0" rx="15" ry="22" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="15" ry="22" fill="url(#petal-pink)" transform="rotate(120)"/>
+          <ellipse cx="0" cy="0" rx="15" ry="22" fill="url(#petal-pink)" transform="rotate(240)"/>
+          <circle r="6" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 10: 10 pétalos (estrella) -->
+        <g id="head-10petals">
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(36)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(72)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(108)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(144)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(216)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(252)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(288)"/>
+          <ellipse cx="0" cy="0" rx="7" ry="15" fill="url(#petal-rose)" transform="rotate(324)"/>
+          <circle r="5" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 11: 5 pétalos en punta -->
+        <g id="head-5pointed">
+          <path d="M 0 -20 L 6 4 L -6 4 Z" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <path d="M 0 -20 L 6 4 L -6 4 Z" fill="url(#petal-pink)" transform="rotate(72)"/>
+          <path d="M 0 -20 L 6 4 L -6 4 Z" fill="url(#petal-pink)" transform="rotate(144)"/>
+          <path d="M 0 -20 L 6 4 L -6 4 Z" fill="url(#petal-pink)" transform="rotate(216)"/>
+          <path d="M 0 -20 L 6 4 L -6 4 Z" fill="url(#petal-pink)" transform="rotate(288)"/>
+          <circle r="6" fill="url(#center-gold)"/>
+        </g>
+        <!-- Flor 12: 6 pétalos ovalados pequeños -->
+        <g id="head-6small">
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(60)"/>
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(120)"/>
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(240)"/>
+          <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#petal-pink)" transform="rotate(300)"/>
+          <circle r="5" fill="url(#center-gold)"/>
+        </g>
+        <!-- Plantas: cada una con tallo distinto + una flor distinta -->
+        <g id="plant-1">
+          <path d="M 0 200 Q 8 110 0 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="5" cy="130" rx="18" ry="8" fill="url(#leaf-green)" transform="rotate(-25 5 130)"/>
+          <ellipse cx="-4" cy="60" rx="16" ry="7" fill="url(#leaf-green)" transform="rotate(20 -4 60)"/>
+          <g transform="translate(0 0)"><use href="#head-5petals"/></g>
+        </g>
+        <g id="plant-2">
+          <path d="M 0 200 Q -6 95 2 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="-6" cy="120" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(30 -6 120)"/>
+          <ellipse cx="4" cy="45" rx="12" ry="5" fill="url(#leaf-green)" transform="rotate(-15 4 45)"/>
+          <g transform="translate(2 0)"><use href="#head-6petals"/></g>
+        </g>
+        <g id="plant-3">
+          <path d="M 0 180 Q 5 85 -2 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="6" cy="95" rx="20" ry="9" fill="url(#leaf-green)" transform="rotate(-20 6 95)"/>
+          <g transform="translate(-2 0)"><use href="#head-4petals"/></g>
+        </g>
+        <g id="plant-4">
+          <path d="M 0 200 Q 4 100 0 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="3" cy="75" rx="15" ry="6" fill="url(#leaf-green)" transform="rotate(-35 3 75)"/>
+          <g transform="translate(0 0)"><use href="#head-8petals"/></g>
+        </g>
+        <g id="plant-5">
+          <path d="M 0 190 Q -5 90 1 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="-5" cy="110" rx="16" ry="7" fill="url(#leaf-green)" transform="rotate(25 -5 110)"/>
+          <ellipse cx="3" cy="50" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(-20 3 50)"/>
+          <g transform="translate(1 0)"><use href="#head-5round"/></g>
+        </g>
+        <g id="plant-6">
+          <path d="M 0 200 Q 6 105 -1 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="4" cy="65" rx="17" ry="7" fill="url(#leaf-green)" transform="rotate(15 4 65)"/>
+          <g transform="translate(-1 0)"><use href="#head-7petals"/></g>
+        </g>
+        <g id="plant-7">
+          <path d="M 0 185 Q -4 88 0 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="-3" cy="55" rx="18" ry="8" fill="url(#leaf-green)" transform="rotate(-28 -3 55)"/>
+          <g transform="translate(0 0)"><use href="#head-long"/></g>
+        </g>
+        <g id="plant-8">
+          <path d="M 0 200 Q 7 98 2 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="6" cy="125" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(22 6 125)"/>
+          <ellipse cx="-2" cy="70" rx="12" ry="5" fill="url(#leaf-green)" transform="rotate(-18 -2 70)"/>
+          <g transform="translate(2 0)"><use href="#head-6big"/></g>
+        </g>
+        <g id="plant-9">
+          <path d="M 0 195 Q -3 95 0 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="4" cy="115" rx="16" ry="7" fill="url(#leaf-green)" transform="rotate(-22 4 115)"/>
+          <g transform="translate(0 0)"><use href="#head-3petals"/></g>
+        </g>
+        <g id="plant-10">
+          <path d="M 0 200 Q 5 100 -2 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="-4" cy="80" rx="14" ry="6" fill="url(#leaf-green)" transform="rotate(28 -4 80)"/>
+          <ellipse cx="3" cy="140" rx="12" ry="5" fill="url(#leaf-green)" transform="rotate(-12 3 140)"/>
+          <g transform="translate(-2 0)"><use href="#head-10petals"/></g>
+        </g>
+        <g id="plant-11">
+          <path d="M 0 188 Q 6 92 0 0" fill="none" stroke="url(#stem-green)" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="5" cy="100" rx="18" ry="8" fill="url(#leaf-green)" transform="rotate(-30 5 100)"/>
+          <g transform="translate(0 0)"><use href="#head-5pointed"/></g>
+        </g>
+        <g id="plant-12">
+          <path d="M 0 200 Q -5 102 1 0" fill="none" stroke="url(#stem-green)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse cx="-3" cy="60" rx="15" ry="6" fill="url(#leaf-green)" transform="rotate(18 -3 60)"/>
+          <ellipse cx="2" cy="130" rx="13" ry="5" fill="url(#leaf-green)" transform="rotate(-25 2 130)"/>
+          <g transform="translate(1 0)"><use href="#head-6small"/></g>
         </g>
       </defs>
-      <!-- Pared de flores: varias plantas a lo ancho, dos filas superpuestas -->
-      <use href="#flower-plant-a" x="40" y="20" opacity="0.92"/>
-      <use href="#flower-plant-b" x="180" y="60" opacity="0.88"/>
-      <use href="#flower-plant-c" x="320" y="10" opacity="0.95"/>
-      <use href="#flower-plant-a" x="460" y="50" opacity="0.9"/>
-      <use href="#flower-plant-b" x="600" y="25" opacity="0.93"/>
-      <use href="#flower-plant-c" x="740" y="55" opacity="0.87"/>
-      <use href="#flower-plant-a" x="880" y="15" opacity="0.91"/>
-      <use href="#flower-plant-b" x="1020" y="45" opacity="0.89"/>
-      <use href="#flower-plant-c" x="1160" y="30" opacity="0.94"/>
-      <use href="#flower-plant-a" x="1300" y="60" opacity="0.9"/>
-      <use href="#flower-plant-b" x="1440" y="20" opacity="0.92"/>
-      <use href="#flower-plant-c" x="1580" y="40" opacity="0.88"/>
-      <!-- Segunda fila (más abajo, escalonada) -->
-      <use href="#flower-plant-b" x="110" y="200" opacity="0.85"/>
-      <use href="#flower-plant-c" x="250" y="240" opacity="0.9"/>
-      <use href="#flower-plant-a" x="390" y="210" opacity="0.88"/>
-      <use href="#flower-plant-b" x="530" y="250" opacity="0.86"/>
-      <use href="#flower-plant-c" x="670" y="220" opacity="0.91"/>
-      <use href="#flower-plant-a" x="810" y="255" opacity="0.87"/>
-      <use href="#flower-plant-b" x="950" y="215" opacity="0.89"/>
-      <use href="#flower-plant-c" x="1090" y="245" opacity="0.86"/>
-      <use href="#flower-plant-a" x="1230" y="230" opacity="0.9"/>
-      <use href="#flower-plant-b" x="1370" y="260" opacity="0.88"/>
-      <use href="#flower-plant-c" x="1510" y="205" opacity="0.87"/>
+      <!-- Una sola fila: cada flor distinta (12 variedades) -->
+      <use href="#plant-1" x="25" y="15" opacity="0.94"/>
+      <use href="#plant-2" x="158" y="8" opacity="0.9"/>
+      <use href="#plant-3" x="291" y="18" opacity="0.92"/>
+      <use href="#plant-4" x="424" y="5" opacity="0.91"/>
+      <use href="#plant-5" x="557" y="12" opacity="0.93"/>
+      <use href="#plant-6" x="690" y="8" opacity="0.9"/>
+      <use href="#plant-7" x="823" y="20" opacity="0.92"/>
+      <use href="#plant-8" x="956" y="10" opacity="0.91"/>
+      <use href="#plant-9" x="1089" y="14" opacity="0.93"/>
+      <use href="#plant-10" x="1222" y="6" opacity="0.9"/>
+      <use href="#plant-11" x="1355" y="16" opacity="0.92"/>
+      <use href="#plant-12" x="1488" y="3" opacity="0.91"/>
     </svg>
   </section>
 </body>
