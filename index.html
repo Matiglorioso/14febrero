@@ -49,29 +49,48 @@
   </section>
 
   <section class="flowers" aria-hidden="true">
-    <!-- Margaritas: imágenes dominio público (Wikimedia Commons), sin API ni clave. Se repiten para cubrir todo el ancho. -->
-    <div class="flowers-row" id="flowers-row"></div>
+    <!-- Margarita en formato dibujo (SVG), sin fondo, repetida para cubrir todo el ancho -->
+    <div class="flowers-row">
+      <svg class="flowers-svg" viewBox="0 0 1200 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Margarita dibujada: pétalos blancos + centro amarillo, sin fondo -->
+          <g id="margarita">
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(0)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(45)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(90)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(135)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(180)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(225)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(270)"/>
+            <ellipse cx="0" cy="0" rx="6" ry="14" fill="#fff" stroke="#f0e6e0" stroke-width="0.6" transform="rotate(315)"/>
+            <circle r="5" fill="#f5e6a3" stroke="#e8d88a" stroke-width="0.5"/>
+          </g>
+        </defs>
+        <use href="#margarita" x="25" y="70"/>
+        <use href="#margarita" x="75" y="70"/>
+        <use href="#margarita" x="125" y="70"/>
+        <use href="#margarita" x="175" y="70"/>
+        <use href="#margarita" x="225" y="70"/>
+        <use href="#margarita" x="275" y="70"/>
+        <use href="#margarita" x="325" y="70"/>
+        <use href="#margarita" x="375" y="70"/>
+        <use href="#margarita" x="425" y="70"/>
+        <use href="#margarita" x="475" y="70"/>
+        <use href="#margarita" x="525" y="70"/>
+        <use href="#margarita" x="575" y="70"/>
+        <use href="#margarita" x="625" y="70"/>
+        <use href="#margarita" x="675" y="70"/>
+        <use href="#margarita" x="725" y="70"/>
+        <use href="#margarita" x="775" y="70"/>
+        <use href="#margarita" x="825" y="70"/>
+        <use href="#margarita" x="875" y="70"/>
+        <use href="#margarita" x="925" y="70"/>
+        <use href="#margarita" x="975" y="70"/>
+        <use href="#margarita" x="1025" y="70"/>
+        <use href="#margarita" x="1075" y="70"/>
+        <use href="#margarita" x="1125" y="70"/>
+      </svg>
+    </div>
   </section>
-
-  <script>
-    (function() {
-      // URLs directas de margaritas en Wikimedia Commons (dominio público, uso libre)
-      var MARGARITAS = [
-        'https://upload.wikimedia.org/wikipedia/commons/d/d9/Daisy_flower_%281%29.jpg',
-        'https://upload.wikimedia.org/wikipedia/commons/9/93/Daisy_flower.jpg',
-        'https://upload.wikimedia.org/wikipedia/commons/1/14/Flowers_daisies_daisy.jpg'
-      ];
-      var row = document.getElementById('flowers-row');
-      // Cantidad necesaria para cubrir el fondo en pantallas anchas (se reparten con flex)
-      var total = 48;
-      for (var i = 0; i < total; i++) {
-        var img = document.createElement('img');
-        img.src = MARGARITAS[i % MARGARITAS.length];
-        img.alt = 'Margarita';
-        img.className = 'flower-img';
-        row.appendChild(img);
-      }
-    })();
-  </script>
 </body>
 </html>
